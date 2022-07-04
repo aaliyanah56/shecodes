@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+    body{
+        display: block;
+        padding:5px 5px ;
+        border: 30px;
+        border-radius: 30px;
+
+    }
+    h1{
+        text-align: center;
+        color: rgb(93, 5, 120);
+        margin-top: 50px;
+        border: 5px;
+        border-style: groove;
+        border-color: rgb(10, 133, 241);
+        border-radius: 100px;
+    }
+    h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin:0 auto;
+        max-width: 100%;
+        border-radius: 10px 10px;
+    }
+    .box{
+      max-width:800px ;
+      margin: 0 auto;
+      background: linear-gradient(to top,  rgb(232, 247, 241) , yellow);
+      padding: 10px 10px 10px 20px;
+    }
+
+    p{
+        font-size: 22px;
+        text-align: center;
+        color: rgb(7, 7, 7);
+        display: block;
+        border-radius: 10px;
+
+    }
+    .link{
+        margin: 10px;
+        display: block;
+        font-size: 19px;
+        text-align: center;
+
+    }
+    .link:hover{
+        text-decoration:underline;
+        color: black;
+    }
+
+    button{
+        margin:0 auto;
+        background-color: blueviolet;
+        border: rgb(255, 0, 0);
+        border-radius: 10px;
+        display: block;
+        color: rgb(245, 243, 243);
+        font-size: 29px;
+        padding: 10px 10px 10px 10px;
+
+    }
+    button:hover{
+        transition: all ease-in;
+        background-color: blueviolet ;
+
+    }
+    .faat{
+        color: rgb(138, 4, 162);
+        font-size: 19px;
+    }
+    </style>
+</head>
+<body>
+   <div class="box"> <h1>Psychology</h1>
+   <h2>Psychology is the scientific study of mind and behavior.</h2><hr>
+   <img src="psychology.jpg" alt="img">
+   <br><hr>
+    <p> Psychology includes the study of conscious and unconscious phenomena,
+        including feelings and thoughts. It is an academic discipline of immense scope,
+        crossing the boundaries between the natural and social sciences.
+        Psychologists seek an understanding of the emergent properties of brains, linking the discipline to neuroscience.</p>
+
+          <div><a href="https://en.wikipedia.org/wiki/Psychology" target="_blank" class="link">Read more here</a></div>
+    <button>Apply for classes</button>
+    <script>
+        function applyforclasses(){
+       let firstName = prompt("whats your name?")
+       if(firstName.length > 6)
+       {
+          alert("Thanks " + firstName + " We will get back to you.");
+        }
+        else{
+            alert("Sorry,you got to input your name😥");
+        }
+    }
+let applyButton = document.querySelector("button");
+        applyButton.addEventListener("click", applyforclasses);
+
+
+
+    </script>
+    <p class="faat">Page by Rahma Noor</p>
+
+   </div>
+</body>
+</html>
