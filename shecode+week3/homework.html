@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js string</title>
+</head>
+<body>
+    <h1>homework js</h1>
+    <script>
+
+var weather = {
+  paris: {
+    temp: 19.7,
+    humidity: 80
+  },
+  tokyo: {
+    temp: 17.3,
+    humidity: 50
+  },
+  lisbon: {
+    temp: 30.2,
+    humidity: 20
+  },
+  "san francisco": {
+    temp: 20.9,
+    humidity: 100
+  },
+  moscow: {
+    temp: -5,
+    humidity: 20
+  }
+};
+var city = prompt("Enter a city?");
+city = city.toLowerCase();
+
+if (weather[city] !== undefined) {
+  var temperature = weather[city].temp;
+  var humidity = weather[city].humidity;
+  var celsiusTemperature = Math.round(temperature);
+  var fahrenheitTemperature = Math.round(temperature * 9 / 5 + 32);
+  alert("It is currently ".concat(celsiusTemperature, "\xB0C (").concat(fahrenheitTemperature, "\xB0F) in ").concat(city, " with a humidity of ").concat(humidity, "%"));
+}
+else  {
+  alert("Sorry we don't know the weather for this city.".concat(city));}
+
+   </script>
+</body>
+</html>

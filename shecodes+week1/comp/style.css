@@ -60,6 +60,7 @@ body {
     margin: 0 auto;
   }
   a {
+    border-radius: 10px;
     border: 1px solid #8064e9;
     background: #8064e9;
     color: #fff;
@@ -68,4 +69,5 @@ body {
     margin: 0 auto;
     padding: 16px 24px;
     text-align: center;
+    width: 100px;
   }
