@@ -1,0 +1,59 @@
+// Challenge 1
+// 1. Modify the function is Windy and return true if the speed is greater than 5 and false if not
+// 2. Call the function and alert ‘It is windy’ if it is windy, Else, alert ‘It is not windy’
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCode homepage</title>
+
+
+</head>
+<body>
+    <h1>js function</h1>
+    <script>
+    function isWindy(speed) {
+        if (speed > 5) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      if(isWindy())
+      {
+        alert("its windy");
+      }
+      else{
+        alert("its not windy");
+      }
+
+// Challenge 2
+// 1. Add unit parameter to isWindy
+// 2. if greater than 5 and metric, return true, else return false
+// 3. Test both scenarios
+// isWindy(2, 'imperial') should return false
+// isWindy(20, 'metric') should return true
+
+      function isWindy(speed, unit)
+      let isWindy= prompt("whats is the metric?");
+       {
+        if (speed > 5 && speed === metric) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      if(isWindy(2, imperical))
+      {
+        alert("its windy");
+      }
+      else{
+        alert("its not windy");
+      }
+    </script>
+</body>
+</html>

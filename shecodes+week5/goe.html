@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: #644364;
+            font-family: "PT Mono";
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            color: #fff;
+            background: #644364;
+        }
+    </style>
+</head>
+<body>
+    <h1>Geolocation API</h1>
+    <button>
+        current location
+    </button>
+    <script>
+        function showPosition(position){
+            let h1 = document.querySelector("h1");
+            h1.innerHTML = `your latitude is ${position.coords.latitude} and longitude is ${position.coords.longitude}`;
+    
+        }
+        function getCurrentPosition(){
+        navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", getCurrentPosition);
+    </script>
+</body>
+</html>
