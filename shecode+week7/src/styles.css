@@ -1,0 +1,25 @@
+body {
+	font-family: Arial, sans-serif;
+}
+.weather-app {
+	border: 3px solid blue;
+	padding: 20px;
+	border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+.weather-app-wrap {
+	max-width: 600px;
+	margin: 30px auto;
+}
+.city li{
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    color: blue;
+}
+.cityname, .cityname h1{
+    color: blue;
+}
