@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <ul class="city">
+            <li>Nairobi</li>
+            <li>Mombasa</li>
+            <li>Nakuru</li>
+            <li>Kajiado</li>
+        </ul>
+        <form id="search-engine">
+          <div class="row mt-3" >
+          <div class="col-6">
+            <input
+              type="text"
+              id="search-city"
+              class="form-control"
+              placeholder="Search Location🔍"
+            />
+          </div>
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="button" class="btn btn-success" id="current-location">Current</button>
+          </div>
+        </div>
+        </form>
+        <div class="row mt-4">
+          <div class="col-6">
+            <div class="cityname">
+            <h1> 
+                Nairobi</h1>
+                <span>Monday 08:27am</span><br/>
+                <span>sunny</span><br/>
+                
+                      <div class="clearfix weather-temperature">
+                        <div class="float-left">
+                          <span id="temperature">⛅27</span>
+                          <span class="units"
+                            ><a href="#" id="celsius-link" class="active">°C</a> |
+                            <a href="#" id="fahrenheit-link">°F</a></span
+                          >
+                        </div>
+                      </div>
+                  
+            </div>
+          </div>
+          <div class="col-6">
+            <span class="elements" id="wind">precipitation: 55%</span> <br />
+            <span class="elements" id="humidity">humidity: 8km/hr</span>
+          </div>
+          <div class="row mt-4">
+            <div class="col-2">Mon<br/>
+                <span>⛅</span><br/>
+                <span>calm</span><br/>
+                <span>23℃</span></div>
+            <div class="col-2">Tue<br/>
+                <span>🌤</span><br/>
+                <span>cloudy</span><br/>
+                <span>26℃</span></div>
+            <div class="col-2">Wed<br/>
+                <span>☀</span><br/>
+                <span>sunny</span><br/>
+                <span>27℃</spanp></div>
+            <div class="col-2">Thu<br/>
+                <span>☀</span><br/>
+                <span>sunny</span><br/>
+                <span>28℃</span></div>
+            <div class="col-2">Fri<br>
+                <span>☔</span><br/>
+                <span>Rainy</span><br/>
+                <span>18℃</span></div>
+            </div> 
+          </div>
+        </div>
+
+        <small>
+            <a
+              href="https://github.com/aaliyanah56/shecodes.git"
+              target="_blank"
+              >Open-source code</a
+            >
+            by aaliyanah56
+          </small>
+          <script src="src/app.js"></script>
+
+  </body>
+</html>
