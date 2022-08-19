@@ -13,4 +13,3 @@ function showWeather(response) {
   }
   
   navigator.geolocation.getCurrentPosition(retrievePosition);
-  
